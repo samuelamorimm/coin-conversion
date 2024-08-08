@@ -1,0 +1,162 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    background: linear-gradient(135deg, #4b9cd3, #f1a364);
+    height: 100vh;
+    overflow: hidden; /* Adicionado para evitar o overflow da página */
+}
+
+.bg-main {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.482);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    margin: 10px 0;
+    border: 3px solid #1364b458;
+    overflow-y: auto; /* Adicionado para permitir a rolagem */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #0a2a64;
+    text-shadow: 2px 2px 4px #ffffff;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #0a2a64;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 2px #ffffff;
+}
+
+.converter {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #0a2a64;
+    padding: 2%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 8px rgba(66, 156, 230, 0.5);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.converter select, .converter input {
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #1481db;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 480px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.converter select:hover, .converter input:hover {
+    border-color: #6daef0;
+    transition: border-color 0.3s ease;
+}
+
+.converter button {
+    padding: 15px 20px;
+    background-color: #2e64aa;
+    border: 2px solid #1363b4;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.converter input[type=submit] {
+    cursor: pointer;
+    font-size: medium;
+    color: #0a2a64;
+}
+
+.converter input[type=submit]:hover{
+    background-color: rgba(128, 128, 128, 0.283);
+} 
+
+.converter button:hover {
+    background-color: #2577c9;
+    transition: background-color 0.3s ease;
+}
+
+.converter span {
+    display: block;
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0a2a64;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+
+.converter input::placeholder {
+    color: #a0a0a0;
+}
+
+.bg-Color:focus {
+    outline: none;
+    color: #489be9;
+    font-weight: 600;
+}
+
+.text-Converter {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.senac-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 3px solid white;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease;
+    z-index: 100; 
+}
+
+.senac-container:hover {
+    transform: scale(1.2);
+}
+
+.senac-logo {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.conversionResult {
+    display: none;
+    padding: 20px;
+    background-image: linear-gradient(45deg, #0b3865, #1c60a4, #0c3a67);
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+

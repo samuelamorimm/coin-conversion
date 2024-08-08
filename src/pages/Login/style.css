@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #4b9cd3, #f1a364);
+    position: relative;
+}
+
+.loginArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px #000000a9;
+    border-radius: 15px;
+    width: 70%;
+    height: 70%;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.623);
+    backdrop-filter: blur(20px);
+}
+
+/* signIn inicio*/
+
+.signIn {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    margin-right: 10px;
+}
+
+
+.signUp {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.signUp input, .signUp h1, .signUp h2, .signUp button {
+    margin: 10px auto;
+}
+
+/* signUp fim */
+
+input {
+    width: 60%;
+    padding: 12px;
+    margin: 15px;
+    border-radius: 8px;
+    border: 2px solid #134363;
+}
+
+input::placeholder {
+    font-family: monospace;
+    font-weight: 600;
+}
+
+label{
+    font-weight: 600;
+    width: 60%;
+    cursor: pointer;
+    color: #0d2f46;
+    text-shadow: 0px 0px 7px #00000038;
+}
+
+p {
+    margin: 5px;
+}
+
+button {
+    width: 40%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 6px;
+    border: none;
+    font-size: larger;
+    background-color: #134363;
+    color: white;
+    text-shadow: 1px 1px 4px #000000ce;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3980afb7;
+    transition-duration: 0.2s;
+}
+
+h1 {
+    font-size: x-large;
+    margin: 12px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: large;
+    margin: 20px 0;
+}
+
+#msgLogin {
+    margin: 0px;
+}
+
+#msgCadastro {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* animation typing inicio */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+.typing {
+    text-align: center;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 1px;
+    animation: typing 2.5s infinite linear alternate;
+}
+/* animation typing fim */
+
+@keyframes left {
+    from {
+        right: 0%;
+        border-radius: 0px 15px 15px 0px;
+    } to {
+        right: 50%;
+        border-radius: 15px 0px 0px 15px;
+    }
+}
+
+@keyframes right {
+    from {
+        right: 50%;
+        border-radius: 15px 0px 0px 15px;
+    } to {
+        right: 0%;
+        border-radius: 0px 15px 15px 0px;
+    }
+}
+
+.separator {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: #134363;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.separator h2 {
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 10%;
+}
+
+.areaLogo {
+    width: 60%;
+    height: 60%;
+    background: url(logocc.png) no-repeat center;
+    background-size: cover;
+}
+
+
+
+.left {
+    right: 50%;
+    border-radius: 15px 0px 0px 15px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loading{
+    display: none;
+    margin: 5px 0px 0px 0px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border-top: 3px solid rgb(51, 0, 255);
+    animation: rotate 1s linear infinite;
+}
+
+input:focus{
+    border: 2px solid #4296ce;
+    outline: none;
+}
+

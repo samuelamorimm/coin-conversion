@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="loginArea">
+            <form class="signIn">
+                <h1  class="typing">Bem vindo ao Coin Conversion!</h1>
+                <h1>Entre na sua conta</h1>
+                <h2 id="msgLogin"></h2>
+                <div id="loading"></div>
+                <input type="email" name="email" id="email" placeholder="email@exemplo.com">
+                <input type="password" name="password" id="password" placeholder="Insira sua senha">
+                <button type="button" id="signIn">Entrar</button>
+                <p>ou</p>
+                <button id="buttonPosition" type='button'>Cadastre-se</button>
+            </form>
+
+            <form class="signUp">
+                <h1>Faça seu cadastro</h1>
+                <h2 id="msgCadastro">e aproveite nossos serviços gratuitamente</h2>
+
+                <label for="name" id="labelName">Nome Completo:</label>
+                <input type="text" placeholder="Insira seu nome completo" id="name">
+
+                <label for="emailSignUp" id="labelEmail">Email:</label>
+                <input type="email" name="emailSignUp" id="emailSignUp" placeholder="email@exemplo.com">
+
+                <label for="passwordSignUp" id="labelPassword">Senha</label>
+                <input type="password" name="passwordSignUp" id="passwordSignUp"
+                placeholder="Cadastre sua senha">
+
+                <label for="confirmPasswordSignUp" id="labelConfirmPassword">Confirme sua senha:</label>
+                <input type="password" name="passwordSignUp" id="confirmPasswordSignUp" placeholder="Confirme sua senha">
+
+                <button type="button" id="buttonSignUp" onclick="cadastrar()">Cadastrar</button>
+                <p>Já tem uma conta?</p>
+                <button id="buttonPositionUp" type="button">Entrar Agora</button>
+            </form>
+
+            <div class="separator">
+                <div class="areaLogo"></div>
+                <h2>O melhor conversor monetário gratuito!</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
